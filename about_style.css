@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#ff008f, transparent), linear-gradient(to top left, #31c108, transparent), linear-gradient(to top right, #14ff00, transparent);
+background-blend-mode: screen;
+}
+header{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(59, 57, 57, 0.938);
+    color:white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+
+}
+.nav-items:hover{
+    color: #f2bb14;
+    text-decoration-line: underline;
+    text-decoration-color: #f2bb14;
+    text-decoration-thickness: 2px;
+
+}
+#nav-items-1:hover{
+    color: #f2bb14;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.8rem;
+    
+    
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 1.1rem;
+    font-family: sans-serif;
+
+}
+.container{
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.75rem;
+    
+}
+.main{
+    width: 500px;
+    height: 450px;
+    background: linear-gradient(#276477, transparent), linear-gradient(to top left, #2b136c, transparent), linear-gradient(to top right, #11b533, transparent);
+    background-blend-mode: screen;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+
+}
+.img{
+    width: 14rem;
+    height: 14rem;
+    /* background-color: blue; */
+    /* margin-left: 136px; */
+    position: absolute;
+    top: 23px;
+    left: 134px;
+    background-image: url(/img/EricMusic.jpg);
+    background-size: 212px 212px ;
+    border-radius: 18px;
+
+}
+.heading{
+
+    position: absolute;
+    top: 259px;
+    left: 197px;
+    font-size: 25px;
+    font-family: Nanum Gothic, sans-serif;
+}
+.description{
+    position: absolute;
+    top: 286px;
+    left: 23px;
+    margin: 5px; 
+    font-size: 16px;
+    font-family: Robot, sans-serif;
+    width: 440px;
+}
+footer{
+    width: 100vw;
+    height: 8vh;
+    background-color:rgba(23, 23, 23, 0.94);
+    
+}
+
+.end{
+    text-align: center;
+    color:white;
+    padding-top: 0.8rem;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+@media only screen and (max-width:390px){
+    header{
+        height: 6vh;
+
+    }
+    .main{
+        width: 320px;
+        /* background-color: none; */
+        /* background: linear-gradient(#ff008f, transparent), linear-gradient(to top left, #31c108, transparent), linear-gradient(to top right, #14ff00, transparent); */
+        background-blend-mode: screen;
+
+    }
+    .img{
+        width: 13rem;
+        height: 13rem;
+        left:60px;
+        background-size: 208px 208px;
+    }
+    .heading{
+        left: 109px;
+    }
+    .description{
+        width: 260px;
+        left: 42px;
+    }
+}
