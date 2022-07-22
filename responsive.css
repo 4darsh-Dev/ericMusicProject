@@ -1,16 +1,63 @@
+@media only screen and (min-widht:820px) and (max-width:1114px){
+    .mainTable{
+        width: 25rem;
+        /* background-color:  cyan; */
+    }
+    .musicList{
+        width: 25rem;
+    }
+    .cd{
+        left: 8rem;
 
-@media screen and (max-width:390px){
+    }
+    .playButton{
+        left:6rem;
+    }
+    #audio1{
+        width: 16.875rem;
+        left: 3.938rem;
+    }
+    
+}
+@media only screen and (min-width:414px) and (max-width:820px){
+    .musicList {
+        width:33rem;
+        margin-left: 9rem;
+    }
+    .mainTable{
+        width:33rem;
+        
+    }
+    .cd{
+        left: 12rem;
+    }
+    .playButton{
+        left: 10rem;
+    }
+    #audio1{
+        left: 7.563rem;
+        width: 18.75rem;
+    }
+    header{
+        height: 4.5vh;
+    }
+}
+
+@media only screen and (max-width:390px){
     header{
         height: 6vh;
     }
     .container{
         background: linear-gradient(#276477, transparent), linear-gradient(to top left, #2b136c, transparent), linear-gradient(to top right, #11b533, transparent);
         background-blend-mode: screen;
+        display: flex;
+        justify-content: center;
+        /* margin-left: 0px; */
     }
   
     .musicList{
         width: 20.625rem;
-        margin-left: 1.688rem;
+        margin-left: 0px;
         background: linear-gradient(#644747, transparent), linear-gradient(to top left, #37d937, transparent), linear-gradient(to top right, #fb8229, transparent);
         background-blend-mode: screen;
 
@@ -44,4 +91,5 @@
        
     }
 }
+
 
