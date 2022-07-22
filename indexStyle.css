@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(59, 57, 57, 0.938);
+    color:white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+
+}
+.nav-items:hover{
+    color: #f2bb14;
+    text-decoration-line: underline;
+    text-decoration-color: #f2bb14;
+    text-decoration-thickness: 2px;
+
+}
+#nav-items-1:hover{
+    color: #f2bb14;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.8rem;
+    
+    
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 1.1rem;
+    font-family: sans-serif;
+
+}
+
+
+.container{
+    background-image: url(/img/plaer3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+}
+.musicList{
+  
+    color: white;
+    width: 33rem;
+    height: 35.5rem;
+    border: 2px solid white;
+    border-radius: 0.75rem;
+    margin-left: 3rem;
+  
+    position: absolute;
+    top: 1.875rem;
+    background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+background-blend-mode: screen;
+}
+.cd{
+    width: 9rem;
+    height: 8.938rem;
+ 
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0.688rem;
+    left: 12rem;
+    background-image: url(/img/myCd.png);
+}
+.playButton{
+    
+    width: 12.5rem;
+    height: 3rem;
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1px;
+    padding-left: 0px;
+}
+#btn1{
+    margin-left: 1.438rem;
+    width: 2.125rem;
+    height: 2.125rem;
+}
+#btn2{
+    margin-left: 1.438rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-top: -0.5rem;
+   
+    border-radius: 20.5rem;
+    background-color: rgb(203, 18, 255);
+    border: 2px solid white;
+}
+#btn2:hover{
+    cursor: pointer;
+}
+.playBtn{
+    padding-left: -3px;
+}
+#btn3{
+    margin-left: 1.438rem;
+    width: 2.125rem;
+    height: 2.125rem;
+    
+}
+#btn1{
+    margin-left: 1.438rem;
+    width: 2.125rem;
+    height: 2.125rem;
+}
+#audio1{
+    position: absolute;
+    top: 14.375rem;
+    left: 114px;
+}
+.mainTable{
+    padding-top: 16.2rem;
+}
+.tab_pad1{
+   margin-left: 0.75rem;
+   width: 4rem;
+   text-align: center;
+   font-size: 1.188rem;
+   border-bottom: 2px solid lightgrey;
+}
+.tab_pad2{
+    width: 22rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.188rem;
+    border-bottom: 2px solid lightgrey;
+    position: relative;
+}
+
+
+.tab_pad3{
+    padding-left: 0.75rem;
+   width: 4rem;
+   text-align: center;
+   font-size: 1.188rem;
+   border-bottom: 2px solid lightgrey;
+}
+#clock_img{
+    width: 2.125rem;
+}
+.songImg1{
+    width: 3.125rem;
+    height: 2.938rem;
+    background-image: url(/img/excuses2.jpg);
+   
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0.313rem;
+
+}
+.songImg2{
+    width: 3.125rem;
+    height: 2.938rem;
+    background-image: url(/img/pasoori2.jpg);
+ 
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0.313rem;
+}
+.songImg3{
+    width: 3.125rem;
+    height: 2.938rem;
+    background-image: url(/img/arabicKuthu2.jpg);
+    
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0.313rem;
+}
+footer{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(59, 57, 57, 0.938);
+    
+}
+.end{
+    text-align: center;
+    color:white;
+    padding-top: 0.8rem;
+    font-family: sans-serif;
+    font-size: 1.188rem;
+}
+
