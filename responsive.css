@@ -1,0 +1,47 @@
+
+@media screen and (max-width:390px){
+    header{
+        height: 6vh;
+    }
+    .container{
+        background: linear-gradient(#276477, transparent), linear-gradient(to top left, #2b136c, transparent), linear-gradient(to top right, #11b533, transparent);
+        background-blend-mode: screen;
+    }
+  
+    .musicList{
+        width: 20.625rem;
+        margin-left: 1.688rem;
+        background: linear-gradient(#644747, transparent), linear-gradient(to top left, #37d937, transparent), linear-gradient(to top right, #fb8229, transparent);
+        background-blend-mode: screen;
+
+    }
+    .cd{
+        left: 5.75rem;
+    }
+    .playButton{
+        left: 3.625rem;
+        
+        
+    }
+    #audio1{
+        width:17.063rem ;
+        left: 1.875rem;
+        height: 2.5rem;
+    }
+    .tab_pad1, .tab_pad2, .tab_pad3 {
+        font-size: 0.938rem;
+        height: 2.938rem;
+        font-family: sans-serif;
+    }
+    #clock_img{
+        width: 1.125rem;
+    }
+    .songImg1 , .songImg2 , .songImg3{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-size: 2.5rem 2.5rem;
+        background-repeat: no-repeat;
+       
+    }
+}
+
