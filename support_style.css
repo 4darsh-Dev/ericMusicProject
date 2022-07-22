@@ -131,7 +131,7 @@ li a{
 .box{
     width: 188px;
     height: 92px;
-    background-color: cyan;
+    /* background-color: cyan; */
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 12px;
@@ -141,14 +141,34 @@ li a{
 }
 #box1{
     margin-left: 12px;
+    background-color: rgb(175, 40, 150);
+}
+#box1:hover{
+    background-color: rgb(144, 68, 130);
+    
+}
+.box-para{
+    font-size: 20px;
+    font-family: Nanum Gothic , sans-serif;
+    font-weight: 600;
+    margin-top: 29px;
+    color: white;
+    text-align: center;
+
 }
 #box2{
     /* margin-left: 2px; */
     background-color: brown;
 }
+#box2:hover{
+    background-color: rgb(139, 64, 64);
+}
 #box3{
     /* margin-left: 3px; */
     background-color: royalblue;
+}
+#box3:hover{
+    background-color: rgb(47, 74, 154);
 }
 footer{
     width: 100vw;
@@ -165,9 +185,6 @@ footer{
     font-size: 19px;
 }
 @media only screen and (max-width:390px){
-    .container{
-        height:100vh;
-    }
     header{
         height: 6vh;
     }
