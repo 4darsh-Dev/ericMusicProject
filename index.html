@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ericMusic</title>
+    <link rel="stylesheet" href="/css/indexStyle.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Eric Music , music, play into nirvana, lovely music">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="nav-items-1" style="font-size:1.1rem ; padding-top: 0.7rem;" href="index.html">ericMusic</a></li>
+                <li><a class="nav-items" href="#">Home</a></li>
+                <li><a class="nav-items" href="about.html">About</a></li>
+                <!-- <li><a class="nav-items" href="browse.html"> Browse</a></li> -->
+                <li><a class="nav-items" href="support.html">Support</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav> -->
+            <div class="musicList">
+                <div class="musicPlayer">
+                    <div class="cd">
+
+                    </div>
+                    <div class="playButton">
+                        <button id="btn1"><img id="previous-song" onclick="previousSong()" src="/img/skip1.png" alt=""></button>
+                        <button id="btn2">
+                        <img id="play-pause" onclick="playPause()"  src="/img/playbtn.png" alt=""></button>
+                        <button id="btn3"><img id="next-song" onclick="nextSong()" src="/img/skip2.png" alt=""></button>
+
+                    </div>
+                    <div class="musics">
+                       <audio controls  id="audio1">
+                           <source src="/audio/Excuses - Ap Dhillon.mp3" type="audio/mp3">
+                       </audio>
+                        <audio src="/audio/Pasoori - Shae Gill.mp3" id="audio2"></audio>
+                        <audio  src="audio/Arabic Kuthu.mp3" id="audio3"></audio>
+                    </div>
+
+                </div>
+                <div class="mainTable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="tab_pad1">#</th>
+                                <th class="tab_pad2">Title </th>
+                                <th style="padding-top:9px;" class="tab_pad3"><img id="clock_img" src="/img/clock_ico.png" 
+                                <th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th class="tab_pad1">1</th>
+                                <td class="tab_pad2">
+                                    <div class="songImg1">
+
+                                    </div> Excuses (AP Dhillon)
+                                </td>
+                                <td class="tab_pad3">2:56</td>
+                            </tr>
+                            <tr>
+                                <th class="tab_pad1">2</th>
+                                <td  class="tab_pad2">
+                                    <div class="songImg2">
+
+                                    </div> Pasoori (Shae Gill)
+                                </td>
+                                <td class="tab_pad3">3:44</td>
+                            </tr>
+                            <tr>
+                                <th class="tab_pad1">3</th>
+                                <td id="row3" class="tab_pad2">
+                                    <div class="songImg3">
+
+                                    </div> Arabic Kuthu (Beast)
+                                </td>
+                                <td class="tab_pad3">4:42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+           
+
+        </div>
+    </main>
+   <script src="/js/index.js"></script>
+
+    <footer>
+        <p class="end" >Copyright &copy; 2022 AdWeb Productions</p>
+    </footer>
+</body>
+
+</html>
