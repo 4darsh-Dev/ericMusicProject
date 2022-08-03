@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | ericMusic</title>
-    <link rel="stylesheet" href="indexStyle.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="/css/indexStyle.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta name="description" content="Eric Music , music, play into nirvana, lovely music">
 </head>
@@ -15,15 +15,35 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a id="nav-items-1" style="font-size:1.1rem ; padding-top: 0.7rem;" href="index.html">ericMusic</a></li>
-                <li><a class="nav-items" href="#">Home</a></li>
+            <a id="nav-items-1"  href="#">ericMusic</a>
+            <ul id="menuList">
+               
+                <li><a class="nav-items" href="index.html">Home</a></li>
                 <li><a class="nav-items" href="about.html">About</a></li>
                 <!-- <li><a class="nav-items" href="browse.html"> Browse</a></li> -->
                 <li><a class="nav-items" href="support.html">Support</a></li>
 
             </ul>
-
+            <ul id="loginList">
+            <li>
+                <button id="btn-login" class="btn1">
+                    Login
+                </button>
+            </li>
+            <li>
+                <button id="btn-signup" class="btn1">
+                    Singnup
+                </button>
+                <li>
+                    <form action="input">
+                        <input id="search-li" class="search-bar" placeholder="Search..." type="text">
+                        <img onclick="openCloseBar()" id="search-img" src="/img/search.png" alt="search">
+                    </form>
+                </li>
+                <img id="menu-logo" onclick="toggleMenu()" src="/img/menu.png" alt="menu">
+                
+            </li>
+        </ul>
         </nav>
     </header>
     <main>
@@ -42,18 +62,19 @@
 
                     </div>
                     <div class="playButton">
-                        <button id="btn1"><img id="previous-song" onclick="previousSong()" src="/img/skip1.png" alt=""></button>
+                        <button id="btn1"><img id="previous-song" onclick="previousSong()" src="/img/skip1.png"
+                                alt=""></button>
                         <button id="btn2">
-                        <img id="play-pause" onclick="playPause()"  src="/img/playbtn.png" alt=""></button>
+                            <img id="play-pause" onclick="playPause()" src="/img/playbtn.png" alt=""></button>
                         <button id="btn3"><img id="next-song" onclick="nextSong()" src="/img/skip2.png" alt=""></button>
 
                     </div>
                     <div class="musics">
-                       <audio controls  id="audio1">
-                           <source src="/audio/Excuses - Ap Dhillon.mp3" type="audio/mp3">
-                       </audio>
+                        <audio controls id="audio1">
+                            <source src="/audio/Excuses - Ap Dhillon.mp3" type="audio/mp3">
+                        </audio>
                         <audio src="/audio/Pasoori - Shae Gill.mp3" id="audio2"></audio>
-                        <audio  src="audio/Arabic Kuthu.mp3" id="audio3"></audio>
+                        <audio src="audio/Arabic Kuthu.mp3" id="audio3"></audio>
                     </div>
 
                 </div>
@@ -63,8 +84,8 @@
                             <tr>
                                 <th class="tab_pad1">#</th>
                                 <th class="tab_pad2">Title </th>
-                                <th style="padding-top:9px;" class="tab_pad3"><img id="clock_img" src="/img/clock_ico.png" 
-                                <th>
+                                <th style="padding-top:9px;" class="tab_pad3"><img id="clock_img"
+                                        src="/img/clock_ico.png" <th>
                             </tr>
                         </thead>
 
@@ -80,7 +101,7 @@
                             </tr>
                             <tr>
                                 <th class="tab_pad1">2</th>
-                                <td  class="tab_pad2">
+                                <td class="tab_pad2">
                                     <div class="songImg2">
 
                                     </div> Pasoori (Shae Gill)
@@ -92,7 +113,7 @@
                                 <td id="row3" class="tab_pad2">
                                     <div class="songImg3">
 
-                                    </div> Arabic Kuthu (Beast)
+                                    </div>Arabic Kuthu (Beast)
                                 </td>
                                 <td class="tab_pad3">4:42</td>
                             </tr>
@@ -102,14 +123,36 @@
 
 
             </div>
-           
+
 
         </div>
     </main>
-   <script src="index.js"></script>
+    <script src="/js/index.js"></script>
 
     <footer>
-        <p class="end" >Copyright &copy; 2022 AdWeb Productions</p>
+        <div class="container4">
+            <div class="container4-box1">
+                <div style="margin-top: 3px ;" class="container4-box1-sub">
+                    <div class="container4-logo"> </div>
+                    <span class="container4-subbox">
+                        <p class="container4-subtitle">ericMusic.tk</p>
+                    </span>
+                </div>
+            </div>
+            <div style="margin-top:3px; " class="container4-box2">
+                <p class="copyright">Copyright &copy; 2022 AdwebProductions.com</p>
+
+                
+            </div>
+            <span class="contact-links">
+                <a href="#"><img class="contact-link-img" src="/img/fb.png" height="20px" alt="facebook"></a>
+                <a href="#"><img class="contact-link-img" src="/img/ig.png" height="20px" alt="instagram"></a>
+                <a href="#"><img class="contact-link-img" src="/img/tw.png" height="20px" alt="twitter"></a>
+                <a href="https://github.com/4darsh-Dev" target="_blank" ><img style="margin-top:-5px;" src="/img/github-logo.png" alt="github" height="25px" class="contact-link-img"></a>
+
+            </span>
+        </div>
+
     </footer>
 </body>
 
