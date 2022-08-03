@@ -1,6 +1,6 @@
-var allSongs = ["Excuses - Ap Dhillon.mp3", 'Pasoori - Shae Gill.mp3',"Arabic Kuthu.mp3","Kitni Haseen Hogi.mp3","Otnicka Where are you.mp3","Titliaan Warga.mp3","Tum Hi Ho.mp3","Zaroori tha.mp3" ]
+var allSongs = ["/audio/Excuses - Ap Dhillon.mp3", '/audio/Pasoori - Shae Gill.mp3',"/audio/Arabic Kuthu.mp3","/audio/Kitni Haseen Hogi.mp3","/audio/Otnicka Where are you.mp3","/audio/Titliaan Warga.mp3","/audio/Tum Hi Ho.mp3","/audio/Zaroori tha.mp3" ]
 var mySound = document.querySelector('#audio1');
- var pPause = document.querySelector('#play-pause');
+var pPause = document.querySelector('#play-pause');
 let songIndex = 0;
 
 //    var song = allSongs[songIndex]
@@ -47,4 +47,42 @@ function previousSong(){
     playPause();
 }
 
+let menuList = document.getElementById("menuList");
+
+        menuList.style.height = "0px";
+
+        function toggleMenu(){
+
+            if(menuList.style.height == "0px"){
+
+                menuList.style.height = "80px";
+                
+            }
+            else {
+                
+                menuList.style.height = "0px";
+            }
+
+        }
+
+        let active = true;
+        function openCloseBar() {
+
+            if (active) {
+                let elem = document.getElementById('search-li');
+                elem.style.display = "inline-block"
+                elem.style.visibility = 'visible';
+                console.log('Clicked first time')
+                active = false;
+
+
+            }
+            else {
+                let elem = document.getElementById('search-li');
+                elem.style.visibility = 'hidden';
+                active = true;
+                console.log('Clicked Second time')
+
+            }
+        }
 
