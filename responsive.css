@@ -45,7 +45,7 @@
 
 @media only screen and (max-width:500px){
     header{
-        height: 7vh;
+        height: 8vh;
     }
     .container{
         background: linear-gradient(#f2d537, transparent), linear-gradient(to top left, #26d996, transparent), linear-gradient(to top right, #34c5b8, transparent);
