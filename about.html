@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | ericMusic</title>
-    <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="/css/about_style.css">
    <!-- <link rel="stylesheet" href="responsive.css"> -->
    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -15,15 +15,35 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a id="nav-items-1" style="font-size:1.1rem ; padding-top: 0.7rem;" href="#">ericMusic</a></li>
+            <a id="nav-items-1"  href="#">ericMusic</a>
+            <ul id="menuList">
+               
                 <li><a class="nav-items" href="index.html">Home</a></li>
                 <li><a class="nav-items" href="about.html">About</a></li>
                 <!-- <li><a class="nav-items" href="browse.html"> Browse</a></li> -->
                 <li><a class="nav-items" href="support.html">Support</a></li>
 
             </ul>
-
+            <ul id="loginList">
+            <li>
+                <button id="btn-login" class="btn1">
+                    Login
+                </button>
+            </li>
+            <li>
+                <button id="btn-signup" class="btn1">
+                    Singnup
+                </button>
+                <li>
+                    <form action="input">
+                        <input id="search-li" class="search-bar" placeholder="Search..." type="text">
+                        <img onclick="openCloseBar()" id="search-img" src="/img/search.png" alt="search">
+                    </form>
+                </li>
+                <img id="menu-logo" onclick="toggleMenu()" src="/img/menu.png" alt="menu">
+                
+            </li>
+        </ul>
         </nav>
     </header>
     <div class="container">
@@ -35,14 +55,78 @@
             </div>
             <div class="info">
                 <p class="heading">About Us </p>
-                <p class="description">We are here to provide you free and premium quality songs with add-free Experience and help you to stream your songs anywhere online and without any buffering.</p>
+                <p class="description">We are here to provide you free and premium quality songs with add-free Experience. </p>
             </div>
         </div>
     </div>
     <footer>
-        <p class="end" >Copyright &copy; 2022 AdWeb Productions</p>
+        <div class="container4">
+            <div class="container4-box1">
+                <div style="margin-top:3px; " class="container4-box1-sub">
+                    <div class="container4-logo"> </div>
+                    <span class="container4-subbox">
+                        <p class="container4-subtitle">ericMusic.tk</p>
+                    </span>
+                </div>
+            </div>
+            <div style="margin-top:3px; " class="container4-box2">
+                <p class="copyright">Copyright &copy; 2022 AdwebProductions.com</p>
+
+                
+            </div>
+            <span class="contact-links">
+                <a href="#"><img class="contact-link-img" src="/img/fb.png" height="20px" alt=""></a>
+                <a href="#"><img class="contact-link-img" src="/img/ig.png" height="20px" alt=""></a>
+                <a href="#"><img class="contact-link-img" src="/img/tw.png" height="20px" alt=""></a>
+                <a href="https://github.com/4darsh-Dev" target="_blank" ><img style="margin-top:-5px;" src="/img/github-logo.png" alt="github" height="25px" class="contact-link-img"></a>
+            </span>
+        </div>
+
     </footer>
 
+    <script>
+        
+        let menuList = document.getElementById("menuList");
+
+        menuList.style.height = "0px";
+
+        function toggleMenu(){
+
+            if(menuList.style.height == "0px"){
+
+                menuList.style.height = "80px";
+                
+            }
+            else {
+                
+                menuList.style.height = "0px";
+            }
+
+        }
+
+        let active = true;
+        function openCloseBar() {
+
+            if (active) {
+                let elem = document.getElementById('search-li');
+                elem.style.display = "inline-block"
+                elem.style.visibility = 'visible';
+                console.log('Clicked first time')
+                active = false;
+
+
+            }
+            else {
+                let elem = document.getElementById('search-li');
+                elem.style.visibility = 'hidden';
+                active = true;
+                console.log('Clicked Second time')
+
+            }
+        }
+    </script>
+
 </body>
+
 
 </html>
