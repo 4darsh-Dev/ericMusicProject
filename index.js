@@ -1,4 +1,4 @@
-var allSongs = ["Excuses - Ap Dhillon.mp3", 'Pasoori - Shae Gill.mp3',"Arabic Kuthu.mp3","Kitni Haseen Hogi.mp3","Otnicka Where are you.mp3","Titliaan Warga.mp3","Tum Hi Ho.mp3","Zaroori tha.mp3" ]
+var allSongs = [ "TumSaathHo.mp3", "Lovely.mp3","MyFeelings.mp3","Kitni Haseen Hogi.mp3","Otnicka Where are you.mp3","Excuses - Ap Dhillon.mp3","Arabic Kuthu.mp3",'Pasoori - Shae Gill.mp3',"Titliaan Warga.mp3","Tum Hi Ho.mp3","Zaroori tha.mp3" ]
 var mySound = document.querySelector('#audio1');
 var pPause = document.querySelector('#play-pause');
 let songIndex = 0;
