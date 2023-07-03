@@ -153,6 +153,7 @@ li a{
     position: absolute;
     right: 157px;
     top: 180px;
+    margin-top: 70px;
 }
 .search-bar{
     width: 560px;
